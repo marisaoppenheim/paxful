@@ -79,3 +79,21 @@ code {
 .backgroundBlue {
   background-color: rgba(137, 196, 244, .2)
 }
+
+.flex1{
+  display: flex;
+  flex:1;
+}
+
+.flex2{
+  display: flex;
+  flex: 2;
+  background-color: rgba(137, 196, 244, .2);
+
+}
+
+.rowNoPad {
+  display: flex;
+  flex-direction: row;
+  height:-webkit-fill-available
+}
