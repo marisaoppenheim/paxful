@@ -1,7 +1,7 @@
 import React from "react"
 import { Header } from "./Header"
 
-export const Main = ({ }) => {
+export const SellSubHeader = ({ }) => {
   return (
     <div className="subHeaderSellContainer">
       <div className="row">
