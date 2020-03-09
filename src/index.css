@@ -89,11 +89,17 @@ code {
   display: flex;
   flex: 2;
   background-color: rgba(137, 196, 244, .2);
-
+  border-right: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
 }
 
 .rowNoPad {
   display: flex;
   flex-direction: row;
   height:-webkit-fill-available
+}
+
+.cardContainer {
+  height:100px;
+  border-bottom: 1px solid lightgrey;
 }
