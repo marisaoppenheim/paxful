@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.headerContainer {
+ display: flex;
+ justify-content: space-between;
+ padding-left: 25px;
+ padding-right: 25px;
+ height: 50px;
+ align-items: center;
+ background-color: navy;
+}
+
+.companyName {
+  color: white;
+  text-transform: uppercase;
+  font: bold;
+  font-size: 20px;
+}
+
+
+.tagSpacer {
+  padding-right: 15px;
+  color:white;
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.subHeaderSellContainer{
+  height:50px;
+  display:flex;
+  align-items: center;
+  border-bottom: 3px solid lightgrey;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+  padding-right: 150px;
+}
+
+.cell {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid lightgrey;
+  padding: 0px 25px
+}
+
+.cellBoth {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding: 0px 25px;
+}
+
+.sellSpacer {
+  color:black;
+  text-decoration: none;
+}
+
+.backgroundBlue {
+  background-color: rgba(137, 196, 244, .2);
+  height:50px
+}
