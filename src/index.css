@@ -100,6 +100,98 @@ code {
 }
 
 .cardContainer {
-  height:100px;
+  height:50px;
   border-bottom: 1px solid lightgrey;
+  flex-grow:1;
+  padding: 15px
+}
+
+.grayDot {
+  height: 8px;
+  width: 8px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.greenDot {
+  height: 8px;
+  width: 8px;
+  background-color:mediumseagreen;
+  border-radius: 50%;
+}
+
+.paddingLeft {
+  padding-left: 8px;
+  color: gray;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.paddingTop{
+  padding-top:4px;
+}
+
+.paddingBottom{
+  padding-bottom: 8px;
+}
+
+.rowNoFill {
+  display: flex;
+  flex-direction: row;
+}
+
+.paddingRightSmall{
+ padding-left: 15px;
+ font-size: 12px;
+ font-weight: bold;
+}
+
+.smallGray {
+  font-size: 10px;
+  color: gray;
+  padding-left:15px;
+}
+
+.biggerGrayDot{
+  height: 25px;
+  width: 25px;
+  background-color: gray;
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+}
+
+.centerDots{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  width:50px;
+}
+
+.paddingTop4G{
+  padding-top:8px;
+  font-size: 10px;
+  color: mediumseagreen;
+  font-weight:bold;
+}
+.paddingTop4Gray{
+  padding-top:8px;
+  font-size: 10px;
+  color: gray;
+  font-weight:bold;
+}
+
+.paddingRight20{
+  padding-right: 20px
+}
+
+.spaceBetween {
+  justify-content:space-between
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  height:50px;
+  flex:1;
 }

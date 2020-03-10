@@ -8,28 +8,38 @@ interface TradeCardProps {
   offerType: string;
   USD: number;
   offerStatus: TradeStatus;
-  wasRead: boolean;
 }
 
 export const TradeCard = ({ buyerId, offerType, USD, offerStatus }: TradeCardProps) => {
   let chatUser: User = Users.filter((x: User) => x.id === buyerId)[0]
   return (
-    <div className="cardContainer">
-      <div>
+    <a className="cardContainer">
+      <div className="rowNoFill spaceBetween">
         <div>
-          {chatUser.name}
+          <div className="rowNoFill paddingBottom">
+            <div className="paddingTop">
+              <div className={offerStatus === TradeStatus.NOT_PAID ? "grayDot" : "greenDot"} />
+            </div>
+            <div className="paddingLeft">
+              {chatUser.name} is buying
         </div>
-        <div>
-
+          </div>
+          <div className="paddingRightSmall">
+            {offerType}
+          </div>
+          <div className="smallGray">
+            {`${USD} USD (${USD / 7874.59})BTC`}
+          </div>
         </div>
-        <div>
-
+        <div className="centerDots">
+          <div className="biggerGrayDot" />
+          <div className={offerStatus === TradeStatus.PAID ? "paddingTop4G" : "paddingTop4Gray"}>
+            {offerStatus}
+          </div>
         </div>
       </div>
-      <div>
+    </a >
 
-      </div>
-    </div>
 
   )
 }
