@@ -5,14 +5,23 @@ export const Users: User[] = [
   {
     id: "1",
     name: "Chanaar",
+    numberOfTrades: 4,
+    positiveReview: 37,
+    negativeReview: 1,
   },
   {
     id: "2",
-    name: "Marisa"
+    name: "Marisa",
+    numberOfTrades: 8,
+    positiveReview: 8,
+    negativeReview: 0,
   },
   {
     id: "3",
-    name: "Tom"
+    name: "Tom",
+    numberOfTrades: 14,
+    positiveReview: 10,
+    negativeReview: 4,
   }
 ]
 
@@ -22,7 +31,8 @@ export const TradeOptions: Trades[] = [{
   offerType: "Amazon Gift Card",
   USD: 75,
   offerStatus: TradeStatus.PAID,
-  messages: []
+  messages: [],
+  tradeHash: "45aFD3Rr"
 },
 {
   id: "2",
@@ -30,7 +40,8 @@ export const TradeOptions: Trades[] = [{
   offerType: "Itunes Gift Card",
   USD: 30,
   offerStatus: TradeStatus.NOT_PAID,
-  messages: []
+  messages: [],
+  tradeHash: "46aFD3Rr"
 },
 {
   id: "3",
@@ -38,7 +49,8 @@ export const TradeOptions: Trades[] = [{
   offerType: "Itunes Gift Card",
   USD: 45,
   offerStatus: TradeStatus.PAID,
-  messages: []
+  messages: [],
+  tradeHash: "47aFD3Rr"
 },
 {
   id: "4",
@@ -46,6 +58,7 @@ export const TradeOptions: Trades[] = [{
   offerType: "PayPal",
   USD: 12,
   offerStatus: TradeStatus.NOT_PAID,
-  messages: []
+  messages: [],
+  tradeHash: "48aFD3Rr"
 },
 ]

@@ -5,6 +5,7 @@ export default interface Trade {
   USD: number;
   offerStatus: TradeStatus;
   messages: Message[];
+  tradeHash: string;
 }
 
 export enum TradeStatus {
@@ -14,7 +15,7 @@ export enum TradeStatus {
 
 export interface Message {
   id: string;
-  tradeId: string;
   speakerId: string;
   time: string;
+  wasRead: boolean;
 }

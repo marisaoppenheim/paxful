@@ -8,12 +8,13 @@ interface TradeCardProps {
   offerType: string;
   USD: number;
   offerStatus: TradeStatus;
+  id: string;
 }
 
-export const TradeCard = ({ buyerId, offerType, USD, offerStatus }: TradeCardProps) => {
+export const TradeCard = ({ buyerId, offerType, USD, offerStatus, id }: TradeCardProps) => {
   let chatUser: User = Users.filter((x: User) => x.id === buyerId)[0]
   return (
-    <a className="cardContainer">
+    <a className="cardContainer" href={`/sell/trades/${id}`}>
       <div className="rowNoFill spaceBetween">
         <div>
           <div className="rowNoFill paddingBottom">

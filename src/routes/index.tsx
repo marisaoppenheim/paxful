@@ -10,9 +10,12 @@ export const Root = ({ }) => {
       <Header />
       {window.location.pathname.includes("/sell") && <SellSubHeader />}
       <Switch>
-        <Route path="/sell/trades">
-          <Trades />
-        </Route>
+        <Route
+          path="/sell/trades/:id"
+          render={routeComponentProps => (
+            <Trades  {...routeComponentProps} />
+          )}
+        />
       </Switch>
     </Router>
   )
