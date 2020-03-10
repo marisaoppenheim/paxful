@@ -1,30 +1,45 @@
 import React from "react"
-import { TradeStatus } from "../types/Trades"
+import Trade, { TradeStatus } from "../types/Trades"
 import User from "../types/User"
 
 interface BuyerCardProps {
   chatUser: User;
-  offerStatus: TradeStatus;
-  positiveReview: number;
-  negativeReview: number;
-  numberOfTrades: number;
-  tradeHash: string;
-  USD: number;
+  selectedTrade: Trade;
 }
 
-export const BuyerCard = ({ chatUser, offerStatus, positiveReview, negativeReview, numberOfTrades, tradeHash, USD }: BuyerCardProps) => {
+export const BuyerCard = ({ chatUser, selectedTrade }: BuyerCardProps) => {
   return (
-    <div>
-      <div>
+    <div className="flexGrow1">
+      <div className="center">
         <div>
           You are trading with {chatUser.name}
         </div>
-        <div>
+        <div className="graySmallFont">
           Started {} ago
         </div>
-        <button>
+        <button className="pill">
           Release bitcoins
         </button>
+        <div className="gridWrapper">
+          <div className="box">
+            Fuck
+          </div>
+          <div className="boxNoRight">
+            Fuck
+          </div>
+          <div className="box">
+            Fuck
+          </div>
+          <div className="boxNoRight">
+            Fuck
+          </div>
+          <div className="box">
+            Fuck
+          </div>
+          <div className="boxNoRight">
+            Fuck
+          </div>
+        </div>
       </div>
     </div>
   )
