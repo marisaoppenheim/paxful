@@ -14,7 +14,7 @@ interface TradeCardProps {
 export const TradeCard = ({ buyerId, offerType, USD, offerStatus, id }: TradeCardProps) => {
   let chatUser: User = Users.filter((x: User) => x.id === buyerId)[0]
   return (
-    <a className="cardContainer" href={`/sell/trades/${id}`}>
+    <a className={window.location.pathname === `/sell/trades/${id}` ? "cardContainer backgroundBlue" : "cardContainer"} href={`/sell/trades/${id}`}>
       <div className="rowNoFill spaceBetween">
         <div>
           <div className="rowNoFill paddingBottom">

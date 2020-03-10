@@ -236,7 +236,7 @@ align-items: center;
 .gridWrapper {
   display: grid;
   grid-template-columns: 100px 100px ;
-  grid-template-rows: 50px 50px 50px;
+  grid-template-rows: 60px 60px 60px;
   background-color: #fff;
   color: #444;
   padding: 20px 20px
@@ -258,5 +258,44 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.centerThings{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom:5px;
+  align-items: center;
+}
+
+.rows{
+  display: flex;
+  flex-direction: row;
+  padding-top:5px;
+}
+
+.green{
+  color: green;
+  font-size: 10px
+}
+
+.red{
+
+    color:red;
+    font-size: 10px
+
+}
+.smallText{
+  font-size: 10px;
+}
+
+.smallTextBold{
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.smallTextAlignSelf{
+  font-size: 12px;
+  padding-top: 5px
 }
