@@ -83,7 +83,7 @@ export const BuyerCard = ({ chatUser, selectedTrade }: BuyerCardProps) => {
                 AMOUNT BTC
             </div>
               <div className="smallTextAlignSelf">
-                {selectedTrade.USD / 7874.59}
+                {(selectedTrade.USD / 7874.59).toFixed(8)}
               </div>
             </div>
           </div>

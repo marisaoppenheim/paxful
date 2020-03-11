@@ -5,6 +5,7 @@ import { TradeOptions, Users } from "./utils"
 import { RouteComponentProps } from "react-router"
 import User from "../types/User"
 import { BuyerCard } from "./BuyerCard";
+import { Messages } from "./Messages"
 
 
 interface TradeProps extends RouteComponentProps<{ id: string }> { }
@@ -21,20 +22,7 @@ export const Trades = ({ match }: TradeProps) => {
         </div>
       </div>
       <div className="flex2">
-        <div>
-          <div>
-            Hi
-        </div>
-          <div>
-            Hi
-        </div>
-          <div>
-            Hi
-        </div>
-          <div>
-            Hi
-        </div>
-        </div>
+        <Messages selectedTrade={selectedTrade} buyer={buyerForTrade} />
       </div>
       <div className="flex1"><BuyerCard chatUser={buyerForTrade} selectedTrade={selectedTrade} /></div>
     </div >

@@ -17,5 +17,5 @@ export interface Message {
   id: string;
   speakerId: string;
   time: string;
-  wasRead: boolean;
+  message: string;
 }
